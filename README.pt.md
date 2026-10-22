@@ -148,3 +148,7 @@ Os dois pontos ficam gravados na EEPROM. A escala de AM sai da mesma calibraçã
 - **Tempos do solenoide e pinagem do CRP42602Y:** baseados em [elehobica/pico_crp42602y_ctrl](https://github.com/elehobica/pico_crp42602y_ctrl) (BSD-2-Clause).
 - **Referência de mecanismos lógicos:** [Fagear/AVRTapeControl](https://github.com/Fagear/AVRTapeControl).
 - **Biblioteca do rádio:** [PU2CLR SI4735](https://github.com/pu2clr/SI4735), de Ricardo Lima Caratti.
+
+## Licença
+
+O firmware é distribuído sob a [licença MIT](LICENSE).

@@ -143,3 +143,7 @@ The two points are stored in EEPROM. The AM scale is derived from the same calib
 - **CRP42602Y solenoid timing and pinout:** based on [elehobica/pico_crp42602y_ctrl](https://github.com/elehobica/pico_crp42602y_ctrl) (BSD-2-Clause).
 - **Logic cassette deck reference:** [Fagear/AVRTapeControl](https://github.com/Fagear/AVRTapeControl).
 - **Radio library:** [PU2CLR SI4735](https://github.com/pu2clr/SI4735) by Ricardo Lima Caratti.
+
+## License
+
+The firmware is released under the [MIT License](LICENSE).
