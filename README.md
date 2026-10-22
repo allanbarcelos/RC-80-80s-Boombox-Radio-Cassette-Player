@@ -7,7 +7,7 @@ Firmware for the **RC-80**, a 3D-printed 80s-style boombox with an AM/FM stereo 
 
 This repository only contains the firmware source code.
 
-*Versão em português mais abaixo.*
+🇧🇷 [Leia em português](README.pt.md)
 
 ---
 
@@ -143,42 +143,3 @@ The two points are stored in EEPROM. The AM scale is derived from the same calib
 - **CRP42602Y solenoid timing and pinout:** based on [elehobica/pico_crp42602y_ctrl](https://github.com/elehobica/pico_crp42602y_ctrl) (BSD-2-Clause).
 - **Logic cassette deck reference:** [Fagear/AVRTapeControl](https://github.com/Fagear/AVRTapeControl).
 - **Radio library:** [PU2CLR SI4735](https://github.com/pu2clr/SI4735) by Ricardo Lima Caratti.
-
----
-
-## Português
-
-Firmware do **RC-80**, um rádio toca-fitas estilo anos 80 impresso em 3D, com Arduino Nano. Ele tem:
-- rádio AM/FM estéreo;
-- mostrador analógico com agulha de verdade;
-- toca-fitas com auto-reverse;
-- bateria interna recarregável.
-
-**Modelo 3D, arquivos de impressão, manual de montagem e lista de compras:**
-👉 **[RC-80 no MakerWorld](https://makerworld.com/en/models/3479422-rc-80-80s-boombox-radio-cassette-player)**
-
-### Sketches
-
-- **`firmware/radio_k7`:** comentários em português, já ajustado para o Brasil (AM com passo de 10 kHz, FM com deênfase de 75 µs).
-- **`firmware/radio_k7_en`:** comentários em inglês. Tem também os ajustes `AM_STEP` e `FM_DEEMPH` para outras regiões.
-
-### Como gravar
-
-1. Instale no Arduino IDE as bibliotecas **PU2CLR SI4735** e **Servo**.
-2. Abra o sketch e escolha a placa **Arduino Nano**. Em clones antigos, use *ATmega328P (Old Bootloader)*.
-3. Envie o sketch.
-
-### Ajustes
-
-- Se o som não sair, troque `AMP_MUTE_LEVEL`: algumas placas PAM8610 silenciam com nível BAIXO.
-- Os ângulos da trava da porta ficam em `SERVO_REST` e `SERVO_RELEASE`.
-
-### Calibração da escala (uma vez)
-
-1. Com o rádio desligado, segure **STOP/EJ** e ligue no VOLUME.
-2. Com o LED piscando devagar, leve a agulha até **88** e aperte **PLAY**.
-3. Com o LED piscando rápido, leve a agulha até **108** e aperte **PLAY**.
-
-A calibração fica gravada na EEPROM.
-
-As tabelas de pinagem e de ligações acima valem para as duas versões.
